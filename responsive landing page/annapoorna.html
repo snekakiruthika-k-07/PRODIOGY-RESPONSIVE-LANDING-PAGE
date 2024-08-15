@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNAPOORNA - Avinashi , Tiruppur</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background:linear-gradient(135deg,green,yellow);
+        }
+        h1{
+            background: linear-gradient(135deg,purple,rgb(240, 29, 64));
+            height:50px;
+            width:1200px;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+        .card{
+            height:320px;
+            width:250px;
+            background-color: white;
+            margin:10px 0px 20px 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        button{
+            background: linear-gradient(135deg,yellow,green);
+            padding:15px;
+            border:none;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            border-radius:5px;
+        }
+        img{
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            border-radius: 20px;
+            margin-top:15px;
+        }
+        #cart {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    button{
+    width:100px;
+    padding:10px;
+    margin-left: 80px;
+    border-radius: 25px;
+    background:linear-gradient(yellow,green) ;
+    border-color:yellow;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    position:relative;
+    right:20px;
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+       
+    </style>
+</head>
+<body>
+     <div id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button><a href="orderplaced.html">BUY NOW</a></button>
+    </div>
+    <div class="container">
+        <h1>ANNAPOORNA Avinashi,Tiruppur</h1>
+        <div class="card">
+            <img src="chicken briyani (1).jpg" alt="chicken briyani" height="200px" width="200px" class="image1"><br>
+            <details>
+                <summary>CHICKEN BRIYANI</summary>
+                <p>Chicken biryani is a fragrant and flavorful dish made with spiced basmati rice, tender chicken, and aromatic herbs.</p>
+            </details>
+            <h3>$350.00</h3>
+            <button class="btn1" data-name="Chicken Biryani" data-price="350">Add item</button>
+        </div>
+        <div class="card">
+            <img src="chicken fried rice (1).jpg" alt="chicken fried rice" height="200px" width="200px" class="image2">
+            <details>
+                <summary>CHICKEN FRIED RICE</summary>
+                <p>Chicken fried rice is a savory dish featuring stir-fried rice, succulent chicken pieces, and a mix of vegetables, all seasoned with soy sauce and spices.</p>
+            </details>
+            <h3>$300.00</h3>
+            <button class="btn2" data-name="Chicken Fried Rice" data-price="300">Add item</button>
+        </div>
+        <div class="card">
+            <img src="chilli parotta.jpg" alt="chill parotta" height="200px" width="200px" class="image3">
+            <details>
+                <summary>CHILLI PAROTTA</summary>
+                <p>Chilli parotta is a spicy and flavorful South Indian dish made with shredded parotta, tossed with a tangy and fiery sauce, onions, capsicum, and aromatic spices.</p>
+            </details>
+            <h3>$320.00</h3>
+            <button class="btn3" data-name="Chilli Parotta" data-price="320">Add item</button>
+        </div>
+        <div class="card">
+            <img src="egg fried rice.jpg" alt="egg fried rice" height="200px" width="200px" class="image4">
+            <details>
+                <summary>EGG FRIED RICE</summary>
+                <p>Egg fried rice is a simple yet delicious dish made with stir-fried rice, scrambled eggs, and vegetables, seasoned with soy sauce and spices for a savory flavor.</p>
+            </details>
+            <h3>$280.00</h3>
+            <button class="btn4" data-name="Egg Fried Rice" data-price="280">Add item</button>
+        </div>
+        <div class="card">
+            <img src="ghee roast.jpg" alt="Ghee roast" height="200px" width="200px" class="image5">
+            <details>
+                <summary>GHEE ROAST</summary>
+                <p>Ghee roast is a rich and aromatic dish featuring crispy dosa or meat, generously cooked with ghee and a blend of spicy, tangy masala, offering a burst of flavor in every bite.</p>
+            </details>
+            <h3>$250.00</h3>
+            <button class="btn5" data-name="Ghee Roast" data-price="250">Add item</button>
+        </div>
+        <div class="card">
+            <img src="ice cream.jpg" alt="ice cream" height="200px" width="200px" class="image6">
+            <details>
+                <summary>ICE CREAM</summary>
+                <p>Ice cream is a creamy, sweet dessert made from dairy or non-dairy ingredients, often flavored with fruits, chocolates, or nuts, and enjoyed frozen for a delightful treat.</p>
+            </details>
+            <h3>$150.00</h3>
+            <button class="btn6" data-name="Ice Cream" data-price="150">Add item</button>
+        </div>
+        <div class="card">
+            <img src="juice.jpg" alt="juice" height="200px" width="200px" class="image7">
+            <details>
+                <summary>JUICE</summary>
+                <p>Juice is a refreshing drink made by extracting the natural liquids from fruits or vegetables, offering a flavorful and nutritious beverage.</p>
+            </details>
+            <h3>$250.00</h3>
+            <button class="btn7" data-name="Juice" data-price="250">Add item</button>
+        </div>
+        <div class="card">
+            <img src="kothu parotta.jpg" alt="kothu parotta" height="200px" width="200px" class="image8">
+            <details>
+                <summary>KOTHU PAROTTA</summary>
+                <p>Kothu parotta is a popular South Indian street food dish made by shredding parotta and stir-frying it with spicy curry, eggs, vegetables, and sometimes meat, creating a flavorful and satisfying meal.</p>
+            </details>
+            <h3>$300.00</h3>
+            <button class="btn8" data-name="Kothu Parotta" data-price="300">Add item</button>
+        </div>
+        <div class="card">
+            <img src="mutton briyani.jpg" alt="mutton briyani" height="200px" width="200px" class="image9">
+            <details>
+                <summary>MUTTON BRIYANI</summary>
+                <p>Mutton biryani is a rich and aromatic dish made with tender, marinated mutton pieces cooked in layers of fragrant basmati rice, spices, and herbs, delivering a flavorful and hearty meal.</p>
+            </details>
+            <h3>$350.00</h3>
+            <button class="btn9" data-name="Mutton Biryani" data-price="350">Add item</button>
+        </div>
+        <div class="card">
+            <img src="noodles (2).jpg" alt="noodles" height="200px" width="200px" class="image10">
+            <details>
+                <summary>NOODLES</summary>
+                <p>Noodles are a versatile dish made from long, thin strands of dough, often boiled and stir-fried with vegetables, meat, or sauces, offering a delicious and quick meal.</p>
+            </details>
+            <h3>$250.00</h3>
+            <button class="btn10" data-name="Noodles" data-price="250">Add item</button>
+        </div>
+        <div class="card">
+            <img src="naan.jpg" alt="naan" height="200px" width="200px" class="image11">
+            <details>
+                <summary>NAAN</summary>
+                <p>Naan is a soft and fluffy Indian bread, typically made with yogurt and cooked in a tandoor, often served as a accompaniment to curries and other dishes.</p>
+            </details>
+            <h3>$100.00</h3>
+            <button class="btn11" data-name="Naan" data-price="100">Add item</button>
+        </div>
+        <div class="card">
+            <img src="panner briyani.jpg" alt="panner briyani" height="200px" width="200px" class="image12">
+            <details>
+                <summary>PANNER BRIYANI</summary>
+                <p>
+Paneer biryani is a flavorful and aromatic vegetarian dish made with basmati rice, chunks of spiced paneer (Indian cottage cheese), and a blend of herbs and spices</p>
+            </details>
+            <h3>$150.00</h3>
+            <button class="btn12" data-name="Panner Briyani" data-price="150">Add item</button>
+        </div>
+        <div class="card">
+            <img src="panner butter masala (1).jpg" alt="panner butter masala" height="200px" width="200px" class="image13">
+            <details>
+                <summary>PANNER BUTTER MASALA</summary>
+                <p>Paneer butter masala is a rich and creamy Indian dish featuring paneer cubes simmered in a smooth, spiced tomato-based gravy with butter and cream.</p>
+            </details>
+            <h3>$300.00</h3>
+            <button class="btn13" data-name="Panner Butter Masala" data-price="300">Add item</button>
+        </div>
+        <div class="card">
+            <img src="parotta.jpg" alt="parotta" height="200px" width="200px" class="image14">
+            <details>
+                <summary>PAROTTA</summary>
+                <p>Parotta is a layered, flaky Indian flatbread made from dough that’s kneaded and stretched, then cooked on a griddle until golden and crispy.</p>
+            </details>
+            <h3>$80.00</h3>
+            <button class="btn14" data-name="Parotta" data-price="80">Add item</button>
+        </div>
+        <div class="card">
+            <img src="roast.jpg" alt="roast" height="200px" width="200px" class="image15">
+            <details>
+                <summary>ROAST</summary>
+                <p>Roast is a cooking technique where meat or vegetables are cooked in an oven or over a fire, resulting in a crispy exterior and tender interior, often seasoned with herbs and spices.</p>
+            </details>
+            <h3>$150.00</h3>
+            <button class="btn15" data-name="roast" data-price="150">Add item</button>
+        </div>
+        <div class="card">
+            <img src="veg fried rice.jpg" alt="veg fried rice" height="200px" width="200px" class="image16">
+            <details>
+                <summary>VEG FRIED RICE</summary>
+                <p>Veg fried rice is a flavorful dish made with stir-fried rice and a mix of vegetables, seasoned with soy sauce, garlic, and other spices for a delicious and satisfying meal.</p>
+            </details>
+            <h3>$250.00</h3>
+            <button class="btn16" data-name="Veg Fried Rice" data-price="250">Add item</button>
+        </div>
+        <div class="card">
+            <img src="chicken-roast.jpg" alt="chicken roast" height="200px" width="200px" class="image17">
+            <details>
+                <summary>CHICKEN ROAST</summary>
+                <p>Chicken roast is a savory dish where chicken is seasoned with spices and herbs, then cooked until golden and crispy on the outside, while remaining juicy and tender on the inside.</p>
+            </details>
+            <h3>$450.00</h3>
+            <button class="btn17" data-name="Chicken Roast" data-price="450">Add item</button>
+        </div>
+        <div class="card">
+            <img src="gulabjamun.jpg" alt="gulabjamun" height="200px" width="200px" class="image18">
+            <details>
+                <summary>GULAB JAMUN</summary>
+                <p>Gulab jamun is a popular Indian sweet made from deep-fried milk-based dough balls soaked in a fragrant sugar syrup, often flavored with cardamom and rose water.</p>
+            </details>
+            <h3>$300.00</h3>
+            <button class="btn18" data-name="Gulabjamun" data-price="300">Add item</button>
+        </div>
+        <div class="card">
+            <img src="panner roast.jpg" alt="panner roast" height="200px" width="200px" class="image19">
+            <details>
+                <summary>PANNER ROAST</summary>
+                <p>Paneer roast is a flavorful dish where chunks of paneer (Indian cottage cheese) are marinated in spices and roasted until crispy, often served with a side of chutney or sauce.</p>
+            </details>
+            <h3>$280.00</h3>
+            <button class="btn19" data-name="Panner Roast" data-price="280">Add item</button>
+        </div>
+        <div class="card">
+            <img src="water-bottle (1).jpg" alt="water bottle" height="200px" width="200px" class="image20">
+            <details>
+                <summary>CHICKEN BRIYANI</summary>
+                <p>A water bottle is a container designed to hold and transport water, typically made from plastic, glass, or metal, and often equipped with a screw-on or flip-top lid for easy access.</p>
+            </details>
+            <h3>$50.00</h3>
+            <button class="btn20" data-name="water bottle" data-price="50">Add item</button>
+        </div>
+    </div>
+    <script>
+        const cart = [];
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                const price = parseFloat(this.getAttribute('data-price'));
+
+                const item = cart.find(i => i.name === name);
+                if (item) {
+                    item.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                cartItems.innerHTML += `<p>${item.name} - $${item.price.toFixed(2)} x ${item.quantity}</p>`;
+            });
+            cartTotal.textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
